@@ -61,7 +61,10 @@ def convert(str):
     value = block[pte & 0x7f][offset]
     print "      --> Translates to Physical Address 0x%x --> Value: %x" % (Address, value)
 
+convert("0x6653")
+convert("0x1c13")
+convert("0x6890")
+convert("0xaf6")
 convert("0x1e6f")
-convert("0x0330")
 
 
