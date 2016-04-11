@@ -30,6 +30,7 @@ ucore的线程控制块数据结构是proc_struct
 
 4.用户态或内核态下的中断处理有什么区别？在trapframe中有什么体现？
 > 用户态到内核态会有特权级的变换，trapframe会多压入ss和esp（栈的替换）。
+
 ####13.3执行流程
 5.do_fork中的内核线程执行的第一条指令是什么？它是如何过渡到内核线程对应的函数的？
 tf.tf_eip = (uint32_t) kernel_thread_entry; /kern/process/entry.S 中的
