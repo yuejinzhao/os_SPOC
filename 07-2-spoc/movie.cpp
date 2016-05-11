@@ -29,7 +29,7 @@ void semaphore_movie_play(int i)
     wait[i]-=ifwait;
     people++;
     cinema=i;
-cprintf(""No.%d movie_sema is playing,remain people num:%d \n"",i,people); /*电影放映*/
+    cprintf(""No.%d movie_sema is playing,remain people num:%d \n"",i,people); /*电影放映*/
     //cprintf(""testING %d %d %d %d\n"",cinema,i,mov[i].value,wait[i]);
     if (wait[i]!=0) up(&mov[i]);
     up(&mutex);
